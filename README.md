@@ -13,6 +13,7 @@
 ### 1. 通信・メッセージングツール
 | ファイル名 | 説明 | 用途 |
 |-----------|------|-----|
+| `vehicle_info_scraper_bot.py` | **Vehicle Info Scraper BOT** | 車両情報スクレイピング、URL短縮機能 |
 | `telegram_working_bot.py` | Telegram BOT | メッセージ送受信、コマンド処理 |
 | `telegram_chatgpt_bot.py` | ChatGPT連携BOT | AI対話機能 |
 | `ssh_telegram_notifier.py` | SSH接続通知 | SSH接続時の自動通知 |
@@ -99,6 +100,15 @@
 ```
 
 ## 使用方法例
+
+### 車両情報スクレイピング
+```bash
+# BOT起動
+./start_vehicle_bot.sh
+
+# Telegramで @VehicleInfoScraper_bot に「スクレイピング」と送信
+# URL送信で車両情報を自動抽出
+```
 
 ### メールでブログ投稿
 ```bash
